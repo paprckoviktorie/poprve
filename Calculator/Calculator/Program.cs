@@ -37,7 +37,35 @@ namespace Calculator
              * 3) Umozni uzivateli zadavat i desetinna cisla, tedy prekopej kalkulacku tak, aby umela pracovat s floaty
              */
 
-            //Tento komentar smaz a misto nej zacni psat svuj prdacky kod.
+            int a;
+            int b;
+
+
+            Console.WriteLine("Zadej první číslo ");
+            a = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Zadej druhé číslo ");
+            b = Convert.ToInt32(Console.ReadLine());
+
+            string znamenko;
+            Console.WriteLine("Zadej + pro sčítání nebo - pro odčítání");
+            znamenko = Convert.ToString(Console.ReadLine());
+           
+            int soucet = a + b;
+            int rozdil = a - b;
+
+            int result = 0;
+
+            if (znamenko == "+")
+                result = soucet;
+            else if (znamenko == "-")
+                result = rozdil;
+            else Console.WriteLine("Neplatný znak");
+            Console.WriteLine(result);
+                
+
+
+
 
             Console.ReadKey(); //Toto nech jako posledni radek, aby se program neukoncil ihned, ale cekal na stisk klavesy od uzivatele.
         }
