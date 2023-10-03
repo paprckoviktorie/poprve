@@ -40,11 +40,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonScitani
             // 
-            this.buttonScitani.Location = new System.Drawing.Point(415, 135);
+            this.buttonScitani.Location = new System.Drawing.Point(415, 101);
             this.buttonScitani.Name = "buttonScitani";
             this.buttonScitani.Size = new System.Drawing.Size(59, 56);
             this.buttonScitani.TabIndex = 0;
@@ -54,7 +56,7 @@
             // 
             // buttonDeleni
             // 
-            this.buttonDeleni.Location = new System.Drawing.Point(516, 229);
+            this.buttonDeleni.Location = new System.Drawing.Point(516, 187);
             this.buttonDeleni.Name = "buttonDeleni";
             this.buttonDeleni.Size = new System.Drawing.Size(59, 56);
             this.buttonDeleni.TabIndex = 1;
@@ -64,7 +66,7 @@
             // 
             // buttonMocnina
             // 
-            this.buttonMocnina.Location = new System.Drawing.Point(618, 135);
+            this.buttonMocnina.Location = new System.Drawing.Point(618, 101);
             this.buttonMocnina.Name = "buttonMocnina";
             this.buttonMocnina.Size = new System.Drawing.Size(114, 56);
             this.buttonMocnina.TabIndex = 2;
@@ -74,16 +76,17 @@
             // 
             // buttonOdmocnina
             // 
-            this.buttonOdmocnina.Location = new System.Drawing.Point(618, 229);
+            this.buttonOdmocnina.Location = new System.Drawing.Point(618, 187);
             this.buttonOdmocnina.Name = "buttonOdmocnina";
             this.buttonOdmocnina.Size = new System.Drawing.Size(114, 56);
             this.buttonOdmocnina.TabIndex = 3;
             this.buttonOdmocnina.Text = "odmocnina";
             this.buttonOdmocnina.UseVisualStyleBackColor = true;
+            this.buttonOdmocnina.Click += new System.EventHandler(this.buttonOdmocnina_Click);
             // 
             // buttonNasobeni
             // 
-            this.buttonNasobeni.Location = new System.Drawing.Point(516, 135);
+            this.buttonNasobeni.Location = new System.Drawing.Point(516, 101);
             this.buttonNasobeni.Name = "buttonNasobeni";
             this.buttonNasobeni.Size = new System.Drawing.Size(59, 56);
             this.buttonNasobeni.TabIndex = 4;
@@ -93,7 +96,7 @@
             // 
             // buttonOdcitani
             // 
-            this.buttonOdcitani.Location = new System.Drawing.Point(415, 229);
+            this.buttonOdcitani.Location = new System.Drawing.Point(415, 187);
             this.buttonOdcitani.Name = "buttonOdcitani";
             this.buttonOdcitani.Size = new System.Drawing.Size(59, 56);
             this.buttonOdcitani.TabIndex = 5;
@@ -117,7 +120,7 @@
             // 
             // textBoxResult
             // 
-            this.textBoxResult.Location = new System.Drawing.Point(203, 242);
+            this.textBoxResult.Location = new System.Drawing.Point(203, 226);
             this.textBoxResult.Name = "textBoxResult";
             this.textBoxResult.Size = new System.Drawing.Size(103, 31);
             this.textBoxResult.TabIndex = 8;
@@ -125,7 +128,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(67, 101);
+            this.label1.Location = new System.Drawing.Point(58, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 25);
             this.label1.TabIndex = 9;
@@ -143,18 +146,39 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(67, 245);
+            this.label3.Location = new System.Drawing.Point(58, 229);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 25);
             this.label3.TabIndex = 11;
             this.label3.Text = "Výsledek";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(60, 38);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(528, 31);
+            this.textBox3.TabIndex = 12;
+            this.textBox3.Text = "Při odmocňování a převodu na binární číslo piš pouze první číslo";
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(415, 272);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(259, 56);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "převod na binární soustavu";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -188,5 +212,7 @@
         private Label label1;
         private Label label2;
         private Label label3;
+        private TextBox textBox3;
+        private Button button1;
     }
 }
