@@ -1,0 +1,133 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ukol2Dmatice
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a; //Sloupce
+            int b; //Řádky
+
+            Console.WriteLine("Naplníme pole čísly, které budeš chtít. Hodnoty se budou zvětšovat postupně.");
+
+            Console.WriteLine("Zadej, kolik chceš prvků ve sloupci.");//To stejné i u sloupců.
+            a=int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Zadej, kolik chceš prvků v" +
+                " řádku."); //Říkám uživateli, že má zadat, kolik chce řádků.
+            b = int.Parse(Console.ReadLine()); //Nastavuji vstupA jako vstup uživatele - to, co zadal.
+
+            Console.WriteLine($"Tvé pole bude tedy mít " +a * b +" prvků."); //Říkám uživateli, kolik prvků bude mít pole.
+            Console.ReadLine();
+
+            int[,] my2DArray = new int [a, b]; //Pole, které bude mít rozměry zadané uživatelem.
+            int numberToAdd = 1; //Chci, aby se v každém poli hodnota zvýšila o jedno.
+
+            for (int i = 0; i < a; i++)
+            {
+          for (int j =0; j < b; j++)
+                {
+                    my2DArray[i,j] = numberToAdd;
+                    numberToAdd++;
+                    Console.Write(my2DArray[i,j]+" ");
+                }
+                Console.ReadLine();
+            }
+            Console.Write("\n");
+
+            //Násobení pole číslem:
+            Console.WriteLine("Chceš původní pole vynásobit nějakým číslem? Pokud ano, napiš číslo, kterým chceš pole vynásobit, pokud ne, napiš 1.");
+
+            int multiplyNumber = int.Parse(Console.ReadLine());
+
+            if (multiplyNumber == 1)
+            {
+                Console.WriteLine("Ok, tvé pole zůstává stejné.");
+                Console.ReadLine();
+            }
+            else
+            {
+                for (int i = 0; i < my2DArray.GetLength(0); i++)
+                {
+                    for (int j = 0; j < my2DArray.GetLength(1); j++)
+                    {
+                        my2DArray[i, j] *= multiplyNumber;
+                        Console.Write(my2DArray[i, j] + " ");
+                    }
+                    Console.ReadLine();
+                }
+                Console.Write("\n");
+            }
+
+
+            //Vypsání řádku, který uživatel chce.
+            Console.WriteLine("Napiš číslo řádku, který chceš vypsat.");
+            int nRow;
+            nRow = int.Parse(Console.ReadLine());
+            for (int j = 0; j < my2DArray.GetLength(1); j++)
+            {
+                Console.Write(my2DArray[nRow - 1,j] + " ");
+            }
+            Console.Write("\n\n");
+
+
+            //Vypsání sloupce, který uživatel chce.
+            Console.WriteLine("Napiš číslo sloupečku, který chceš vypsat.");
+            int nColumn;
+            nColumn = int.Parse(Console.ReadLine());
+            for (int i=0; i<my2DArray.GetLength(0);i++)
+            {        
+                Console.Write(my2DArray[i, nColumn-1] + " ");
+            }
+            Console.Write("\n\n");
+
+            //Vypsání hlavní diagonály
+
+            //Prohazování prvků:
+            Console.WriteLine("Teď se ti prohodí první prvky prvního řádku a druhého řádku.");
+            Console.ReadLine();
+            int xFirst = 0;
+            int yFirst = 0;
+            int xSecond = 1;
+            int ySecond = 0;
+
+            int first = my2DArray[xFirst,yFirst];
+            int second = my2DArray[xSecond,ySecond];
+            int temporary = first;
+            my2DArray[xFirst, yFirst] = second; 
+            my2DArray[xSecond, ySecond] = temporary;
+
+            for (int i =0; i<my2DArray.GetLength(0); i++)
+            {
+                for (int j = 0; j < my2DArray.GetLength(1); j++)
+                {
+                    Console.Write(my2DArray[i, j] + " ");
+                }
+                Console.Write("\n");
+            }
+            Console.ReadLine();
+
+
+            //Prohazování řádků:
+            int nRowSwap = 0;
+            int mRowSwap = 1; 
+
+
+            //Prohazování sloupců:
+            int nColumnSwap = 0;
+            int mColumnSwap = 0;
+
+            //Zadání druhé matice
+
+
+
+
+        }
+        
+    }
+}
