@@ -45,6 +45,16 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.buttonOne = new System.Windows.Forms.Button();
+            this.buttonFour = new System.Windows.Forms.Button();
+            this.buttonThree = new System.Windows.Forms.Button();
+            this.buttonTwo = new System.Windows.Forms.Button();
+            this.buttonFive = new System.Windows.Forms.Button();
+            this.buttonSix = new System.Windows.Forms.Button();
+            this.buttonZero = new System.Windows.Forms.Button();
+            this.buttonNine = new System.Windows.Forms.Button();
+            this.buttonEight = new System.Windows.Forms.Button();
+            this.buttonSeven = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonScitani
@@ -203,11 +213,111 @@
             this.label5.TabIndex = 17;
             this.label5.Text = "Při desetinných číslech piš desetinnou čárku a nedělej mezery.";
             // 
+            // buttonOne
+            // 
+            this.buttonOne.Location = new System.Drawing.Point(75, 277);
+            this.buttonOne.Name = "buttonOne";
+            this.buttonOne.Size = new System.Drawing.Size(34, 37);
+            this.buttonOne.TabIndex = 18;
+            this.buttonOne.Text = "1";
+            this.buttonOne.UseVisualStyleBackColor = true;
+            // 
+            // buttonFour
+            // 
+            this.buttonFour.Location = new System.Drawing.Point(75, 320);
+            this.buttonFour.Name = "buttonFour";
+            this.buttonFour.Size = new System.Drawing.Size(34, 37);
+            this.buttonFour.TabIndex = 19;
+            this.buttonFour.Text = "4";
+            this.buttonFour.UseVisualStyleBackColor = true;
+            // 
+            // buttonThree
+            // 
+            this.buttonThree.Location = new System.Drawing.Point(155, 277);
+            this.buttonThree.Name = "buttonThree";
+            this.buttonThree.Size = new System.Drawing.Size(34, 37);
+            this.buttonThree.TabIndex = 20;
+            this.buttonThree.Text = "3";
+            this.buttonThree.UseVisualStyleBackColor = true;
+            // 
+            // buttonTwo
+            // 
+            this.buttonTwo.Location = new System.Drawing.Point(115, 277);
+            this.buttonTwo.Name = "buttonTwo";
+            this.buttonTwo.Size = new System.Drawing.Size(34, 37);
+            this.buttonTwo.TabIndex = 21;
+            this.buttonTwo.Text = "2";
+            this.buttonTwo.UseVisualStyleBackColor = true;
+            // 
+            // buttonFive
+            // 
+            this.buttonFive.Location = new System.Drawing.Point(115, 320);
+            this.buttonFive.Name = "buttonFive";
+            this.buttonFive.Size = new System.Drawing.Size(34, 37);
+            this.buttonFive.TabIndex = 22;
+            this.buttonFive.Text = "5";
+            this.buttonFive.UseVisualStyleBackColor = true;
+            // 
+            // buttonSix
+            // 
+            this.buttonSix.Location = new System.Drawing.Point(155, 320);
+            this.buttonSix.Name = "buttonSix";
+            this.buttonSix.Size = new System.Drawing.Size(34, 37);
+            this.buttonSix.TabIndex = 23;
+            this.buttonSix.Text = "6";
+            this.buttonSix.UseVisualStyleBackColor = true;
+            // 
+            // buttonZero
+            // 
+            this.buttonZero.Location = new System.Drawing.Point(115, 406);
+            this.buttonZero.Name = "buttonZero";
+            this.buttonZero.Size = new System.Drawing.Size(34, 37);
+            this.buttonZero.TabIndex = 24;
+            this.buttonZero.Text = "0";
+            this.buttonZero.UseVisualStyleBackColor = true;
+            // 
+            // buttonNine
+            // 
+            this.buttonNine.Location = new System.Drawing.Point(155, 363);
+            this.buttonNine.Name = "buttonNine";
+            this.buttonNine.Size = new System.Drawing.Size(34, 37);
+            this.buttonNine.TabIndex = 25;
+            this.buttonNine.Text = "9";
+            this.buttonNine.UseVisualStyleBackColor = true;
+            // 
+            // buttonEight
+            // 
+            this.buttonEight.Location = new System.Drawing.Point(115, 363);
+            this.buttonEight.Name = "buttonEight";
+            this.buttonEight.Size = new System.Drawing.Size(34, 37);
+            this.buttonEight.TabIndex = 26;
+            this.buttonEight.Text = "8";
+            this.buttonEight.UseVisualStyleBackColor = true;
+            // 
+            // buttonSeven
+            // 
+            this.buttonSeven.Location = new System.Drawing.Point(75, 363);
+            this.buttonSeven.Name = "buttonSeven";
+            this.buttonSeven.Size = new System.Drawing.Size(34, 37);
+            this.buttonSeven.TabIndex = 27;
+            this.buttonSeven.Text = "7";
+            this.buttonSeven.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonSeven);
+            this.Controls.Add(this.buttonEight);
+            this.Controls.Add(this.buttonNine);
+            this.Controls.Add(this.buttonZero);
+            this.Controls.Add(this.buttonSix);
+            this.Controls.Add(this.buttonFive);
+            this.Controls.Add(this.buttonTwo);
+            this.Controls.Add(this.buttonThree);
+            this.Controls.Add(this.buttonFour);
+            this.Controls.Add(this.buttonOne);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button3);
@@ -251,5 +361,15 @@
         private Button button3;
         private Label label4;
         private Label label5;
+        private Button buttonOne;
+        private Button buttonFour;
+        private Button buttonThree;
+        private Button buttonTwo;
+        private Button buttonFive;
+        private Button buttonSix;
+        private Button buttonZero;
+        private Button buttonNine;
+        private Button buttonEight;
+        private Button buttonSeven;
     }
 }

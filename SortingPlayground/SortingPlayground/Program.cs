@@ -17,7 +17,7 @@ namespace SortingPlayground
 
         static int[] BubbleSort(int[] array)
         {
-            int[] sortedArray = (int[])array.Clone(); // Řaď v tomto poli, ve kterém je výchoze zkopírováno všechno ze vstupního pole. (Dělám bubble sort)
+            int[] sortedArray = (int[])array.Clone(); //|Řaď v tomto poli, ve kterém je výchoze zkopírováno všechno ze vstupního pole. (Dělám bubble sort)
             //vnější for cyklus jde nahradi whilem, kde kontroluju, jestli jsem něco prohazovala
             
            
@@ -66,6 +66,19 @@ namespace SortingPlayground
         static int[] InsertionSort(int[] array)
         {
             int[] sortedArray = (int[])array.Clone(); // Řaď v tomto poli, ve kterém je výchoze zkopírováno všechno ze vstupního pole. (insertion sort)
+            
+            for (int i=1; i<sortedArray.Length; i++) //Až od druhého prvku - první se považuje za setřízený
+            {
+                int temporary =sortedArray[i]; //Prozatimní proměnná nám uloží momentální prvek, který pak vložíme na správné místo.
+                int j = i - 1; //Nová proměnná j, která bude mít hodnotu předchozího prvku, abychom pak mohli porovnávat s prvky, které se předtím už předtřídily
+
+                while (j >= 0 && sortedArray[j]>temporary) //Probíhá, dokud j je platný index a zároveň prozatimní hodnota je menší než hodnota toho prvku, který kontrolujeme.
+                {
+                    sortedArray[j+1]=sortedArray[j]; //Ten prvek
+                    j = j - 1;
+                }
+                sortedArray[j + 1] = temporary;
+            }
             
 
 
