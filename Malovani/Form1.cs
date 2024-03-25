@@ -52,28 +52,28 @@ namespace Malovani
             InitializeComponent();
             panelCanvas.BackColor = Color.White; //Nastavení barvy plátna na bílou.
 
-            buttonPencil.BackgroundImage = Image.FromFile("C:\\Users\\Viki\\Documents\\GymVod\\PROGRAMOVANI\\poprve\\Malovani\\Pencil2.png");
+            buttonPencil.BackgroundImage = Properties.Resources.Pencil2;
             buttonPencil.BackgroundImageLayout = ImageLayout.Stretch;
 
-            buttonImage.BackgroundImage = Image.FromFile("C:\\Users\\Viki\\Documents\\GymVod\\PROGRAMOVANI\\poprve\\Malovani\\Image.png");
+            buttonImage.BackgroundImage = Properties.Resources.Image;
             buttonImage.BackgroundImageLayout = ImageLayout.Stretch;
 
-            buttonLine.BackgroundImage = Image.FromFile("C:\\Users\\Viki\\Documents\\GymVod\\PROGRAMOVANI\\poprve\\Malovani\\Line.png");
+            buttonLine.BackgroundImage = Properties.Resources.Line;
             buttonLine.BackgroundImageLayout = ImageLayout.Stretch;
 
-            buttonEraser.BackgroundImage = Image.FromFile("C:\\Users\\Viki\\Documents\\GymVod\\PROGRAMOVANI\\poprve\\Malovani\\Eraser.png");
+            buttonEraser.BackgroundImage = Properties.Resources.Eraser;
             buttonEraser.BackgroundImageLayout = ImageLayout.Stretch;
 
-            buttonNewCanvas.BackgroundImage = Image.FromFile("C:\\Users\\Viki\\Documents\\GymVod\\PROGRAMOVANI\\poprve\\Malovani\\Canvas.png");
+            buttonNewCanvas.BackgroundImage = Properties.Resources.Canvas;
             buttonNewCanvas.BackgroundImageLayout = ImageLayout.Stretch;
 
-            buttonEllipse.BackgroundImage = Image.FromFile("C:\\Users\\Viki\\Documents\\GymVod\\PROGRAMOVANI\\poprve\\Malovani\\Ellipse.png");
+            buttonEllipse.BackgroundImage = Properties.Resources.Ellipse;
             buttonEllipse.BackgroundImageLayout = ImageLayout.Stretch;
 
-            buttonRectangle.BackgroundImage = Image.FromFile("C:\\Users\\Viki\\Documents\\GymVod\\PROGRAMOVANI\\poprve\\Malovani\\Rectangle.png");
+            buttonRectangle.BackgroundImage = Properties.Resources.Rectangle;
             buttonRectangle.BackgroundImageLayout = ImageLayout.Stretch;
 
-            buttonPolygon.BackgroundImage = Image.FromFile("C:\\Users\\Viki\\Documents\\GymVod\\PROGRAMOVANI\\poprve\\Malovani\\Triangle.png");
+            buttonPolygon.BackgroundImage = Properties.Resources.Triangle;
             buttonPolygon.BackgroundImageLayout = ImageLayout.Stretch;
 
             int trackBarMiddleValue = trackBarThickness.Maximum / 2;
